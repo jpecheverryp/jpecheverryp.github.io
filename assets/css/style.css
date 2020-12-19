@@ -21,6 +21,10 @@ article {
     margin: 15px;
 }
 
+.portfolio-img {
+    max-width: 100%;
+}
+
 /* Removes positioning of the content on smaller screens */
 @media screen and (max-width: 620px) {
     article {
