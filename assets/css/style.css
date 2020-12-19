@@ -14,6 +14,13 @@ article {
     position: relative;
     top: 100px;
 }
+
+.about-me-img {
+    float: left;
+    border-radius: 50%;
+    margin: 15px;
+}
+
 /* Removes positioning of the content on smaller screens */
 @media screen and (max-width: 620px) {
     article {
