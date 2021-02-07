@@ -9,103 +9,74 @@
 </head>
 
 <body>
-    <!-- Navbar -->
+    <!-- Navbar Here -->
     <nav>
-            <!-- Main title of the Navbar  -->
-            <span>Juan P Echeverry</span>
-            <!-- Different buttons in the Navbar -->
-                <ul>
-                    <li>
-                        <a href="#about">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
     <article id="about">
-        <div>
-            <div>
-                <h1>Hey I'm a Web Developer!</h1>
-            </div>
-        </div>
-        <div>
-            <div>
-                <img src="http://www.placehold.it/150" alt="placeholder">
-                <p>
-                    Welcome to my site, I'm Juan P Echeverry. I'm learning web development.
-                </p>
-                <p>
-                    I've been living on Atlanta, GA for the last 3 years and I love it here. I am currently enrolled in
-                    the GA Tech coding bootcamp and I have learn these technologies so far:
-                </p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Bootstrap</li>
-                    <li>Javascript</li>
-                    <li>Git & GitHub</li>
-                </ul>
-                <p>
-                    I want to start my coding career, because I want to create something new and useful for everyone. I
-                    find it fun to be able to solve problems that we have and automating boring stuff that we could
-                    avoid doing, so we can focus on more creative tasks
-                </p>
+        <h1>Hey there, I'm a Web Developer!</h1>
 
+        <img src="http://www.placehold.it/150" alt="placeholder">
+        <p>
+            Welcome to my site, I am Juan P Echeverry a web developer.
+        </p>
+        <p>
+            I am currently living on Atlanta, GA and I love it here. I am currently enrolled in
+            the GA Tech full stack web development bootcamp because I love tech and I would love to create something
+            new.
+        </p>
 
-            </div>
-        </div>
+        <!-- This pararaph repeats itself, write again later  -->
+        <p>
+            I want to start my coding career, because I want to create something new and useful for everyone. I
+            find it fun to be able to solve problems that we have and automating boring stuff that we could
+            avoid doing, so we can focus on more creative tasks
+        </p>
+    </article>
+
+    <article id="skills">
+        <h2>My Skills</h2>
+        <h3>Frontend Dev:</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Materialize</li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+            <li>Git & GitHub</li>
+        </ul>
+        <h3>Something else</h3>
+        <h3></h3>
     </article>
 
     <article id="projects">
-        <div>
-            <div>
-                <h1>My Projects</h1>
-            </div>
-        </div>
-        <div>
-            <div>
-                <img src="https://www.placehold.it/200" alt="placeholder">
-            </div>
-            <div>
-                <img src="https://www.placehold.it/200" alt="placeholder">
-            </div>
-            <div>
-                <img src="https://www.placehold.it/200" alt="placeholder">
-            </div>
-        </div>
-        <div>
-            <div>
-                <img src="https://www.placehold.it/200" alt="placeholder">
-            </div>
-            <div>
-                <img src="https://www.placehold.it/200" alt="placeholder">
-            </div>
-            <div>
-                <img src="https://www.placehold.it/200" alt="placeholder">
-            </div>
-        </div>
+
+        <h2>My Projects</h2>
+        <img src="https://www.placehold.it/200" alt="placeholder">
+        <img src="https://www.placehold.it/200" alt="placeholder">
+        <img src="https://www.placehold.it/200" alt="placeholder">
     </article>
 
     <article id="contact">
-        <div>
-            <div>
-                <h1>Contact me</h1>
-            </div>
-        </div>
-        <div>
+        <h2>Contact me</h2>
+        <!-- I should change this form for something better -->
+        <!-- Also add links to github linkedin and cv -->
+        <form>
             <label for="email">Email address</label>
             <input id="email" type="email" placeholder="johndoe@example.com">
-        </div>
-        <div>
+    
             <label for="message">Message</label>
             <textarea id="message" rows="3" placeholder="Message"></textarea>
-        </div>
-        <input type="submit" value="Send">
+            
+            <input type="submit" value="Send">
+        </form>
     </article>
 </body>
 
