@@ -9,55 +9,48 @@
 </head>
 
 <body>
-    <!-- Navbar Starts Here -->
-    <!-- Main container, creates navbar, expands it and gives it bg-color-->
-    <nav class="navbar navbar-dark navbar-expand-lg">
-        <!-- makes it responsive -->
-        <div class="container-fluid">
-            <!-- Main title of the Navbar, Margin-bottom 0, and color -->
-            <span class="navbar-brand mb-0 h1">Juan P Echeverry</span>
+    <!-- Navbar -->
+    <nav>
+            <!-- Main title of the Navbar  -->
+            <span>Juan P Echeverry</span>
             <!-- Different buttons in the Navbar -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
+                <ul>
+                    <li>
+                        <a href="#about">About Me</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Portfolio</a>
+                    <li>
+                        <a href="#projects">Portfolio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                    <li>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
-            </div>
-
-        </div>
     </nav>
 
-    <article class="container" id="about">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="p-2">Hey I'm a Web Developer!</h1>
+    <article id="about">
+        <div>
+            <div>
+                <h1>Hey I'm a Web Developer!</h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <img class="about-me-img" src="http://www.placehold.it/150" alt="placeholder">
-                <p class="fs-4">
+        <div>
+            <div>
+                <img src="http://www.placehold.it/150" alt="placeholder">
+                <p>
                     Welcome to my site, I'm Juan P Echeverry. I'm learning web development.
                 </p>
-                <p class="fs-4">
+                <p>
                     I've been living on Atlanta, GA for the last 3 years and I love it here. I am currently enrolled in
                     the GA Tech coding bootcamp and I have learn these technologies so far:
                 </p>
-                <ul class="fs-3">
+                <ul>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Bootstrap</li>
                     <li>Javascript</li>
                     <li>Git & GitHub</li>
                 </ul>
-                <p class="fs-4">
+                <p>
                     I want to start my coding career, because I want to create something new and useful for everyone. I
                     find it fun to be able to solve problems that we have and automating boring stuff that we could
                     avoid doing, so we can focus on more creative tasks
@@ -68,57 +61,51 @@
         </div>
     </article>
 
-    <article class="container" id="projects">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="p-2">My Projects</h1>
+    <article id="projects">
+        <div>
+            <div>
+                <h1>My Projects</h1>
             </div>
         </div>
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <img class="p-4 portfolio-img" src="https://www.placehold.it/350" alt="placeholder">
+        <div>
+            <div>
+                <img src="https://www.placehold.it/200" alt="placeholder">
             </div>
-            <div class="col-md-4">
-                <img class="p-4 portfolio-img" src="https://www.placehold.it/350" alt="placeholder">
+            <div>
+                <img src="https://www.placehold.it/200" alt="placeholder">
             </div>
-            <div class="col-md-4">
-                <img class="p-4 portfolio-img" src="https://www.placehold.it/350" alt="placeholder">
+            <div>
+                <img src="https://www.placehold.it/200" alt="placeholder">
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <img class="p-4 portfolio-img" src="https://www.placehold.it/350" alt="placeholder">
+        <div>
+            <div>
+                <img src="https://www.placehold.it/200" alt="placeholder">
             </div>
-            <div class="col-md-4">
-                <img class="p-4 portfolio-img" src="https://www.placehold.it/350" alt="placeholder">
+            <div>
+                <img src="https://www.placehold.it/200" alt="placeholder">
             </div>
-            <div class="col-md-4">
-                <img class="p-4 portfolio-img" src="https://www.placehold.it/350" alt="placeholder">
+            <div>
+                <img src="https://www.placehold.it/200" alt="placeholder">
             </div>
         </div>
     </article>
 
-    <article class="container p-2" id="contact">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="p-2">Contact me</h1>
+    <article id="contact">
+        <div>
+            <div>
+                <h1>Contact me</h1>
             </div>
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+        <div>
+            <label for="email">Email address</label>
+            <input id="email" type="email" placeholder="johndoe@example.com">
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput2" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+        <div>
+            <label for="message">Message</label>
+            <textarea id="message" rows="3" placeholder="Message"></textarea>
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
-        </div>
-        <button>
-            Submit
-        </button>
+        <input type="submit" value="Send">
     </article>
 </body>
 
