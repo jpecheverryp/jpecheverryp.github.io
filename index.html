@@ -4,45 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+    <title>Juan P Echeverry</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <!-- Navbar Here -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <span class="logo">Juan P Echeverry</span>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
 
-    <article id="about">
-        <h1>Hey there, I'm a Web Developer!</h1>
+    <section class="about-section" id="about">
+        <h1 class="about-name">I'm Juan P Echeverry</h1>
+        <div class="about-img-container">
+            <img class="about-img" src="./assets/images/dom-rep-beach.png" alt="me at the beach">
+        </div>
+        <article class="about-description">
+            <p>
+                Welcome to my site, I am Juan P Echeverry
+            </p>
+            <p>
+                I am currently living on Atlanta, GA and I love it here!
+            </p>
+            <p>
+                I am currently enrolled in
+                the GA Tech Full Stack Web Development Bootcamp, that's because I love tech and I would love to be
+                involved
+                on creating something new and awesome!
+            </p>
+            <p>
+                My interests include Tech, Finance, Science, Math and Origami
+            </p>
+        </article>
+    </section>
 
-        <img src="http://www.placehold.it/150" alt="placeholder">
-        <p>
-            Welcome to my site, I am Juan P Echeverry a web developer.
-        </p>
-        <p>
-            I am currently living on Atlanta, GA and I love it here. I am currently enrolled in
-            the GA Tech full stack web development bootcamp because I love tech and I would love to create something
-            new.
-        </p>
-
-        <!-- This pararaph repeats itself, write again later  -->
-        <p>
-            I want to start my coding career, because I want to create something new and useful for everyone. I
-            find it fun to be able to solve problems that we have and automating boring stuff that we could
-            avoid doing, so we can focus on more creative tasks
-        </p>
-    </article>
-
-    <article id="skills">
+    <section id="skills">
         <h2>My Skills</h2>
-        <h3>Frontend Dev:</h3>
+        <h3>Frontend Technologies:</h3>
         <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -54,30 +64,30 @@
         </ul>
         <h3>Something else</h3>
         <h3></h3>
-    </article>
+    </section>
 
-    <article id="projects">
+    <section id="projects">
 
         <h2>My Projects</h2>
         <img src="https://www.placehold.it/200" alt="placeholder">
         <img src="https://www.placehold.it/200" alt="placeholder">
         <img src="https://www.placehold.it/200" alt="placeholder">
-    </article>
+    </section>
 
-    <article id="contact">
+    <section id="contact">
         <h2>Contact me</h2>
         <!-- I should change this form for something better -->
         <!-- Also add links to github linkedin and cv -->
         <form>
             <label for="email">Email address</label>
             <input id="email" type="email" placeholder="johndoe@example.com">
-    
+
             <label for="message">Message</label>
             <textarea id="message" rows="3" placeholder="Message"></textarea>
-            
+
             <input type="submit" value="Send">
         </form>
-    </article>
+    </section>
 </body>
 
 </html>
