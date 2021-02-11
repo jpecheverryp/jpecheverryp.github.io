@@ -16,7 +16,6 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -50,28 +49,42 @@
         </article>
     </section>
 
-    <section id="skills">
-        <h2>My Skills</h2>
-        <h3>Frontend Technologies:</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Bootstrap</li>
-            <li>Materialize</li>
-            <li>Javascript</li>
-            <li>jQuery</li>
-            <li>Git & GitHub</li>
-        </ul>
-        <h3>Something else</h3>
-        <h3></h3>
-    </section>
-
     <section id="projects">
 
         <h2>My Projects</h2>
-        <img src="https://www.placehold.it/200" alt="placeholder">
-        <img src="https://www.placehold.it/200" alt="placeholder">
-        <img src="https://www.placehold.it/200" alt="placeholder">
+        <div class="projects-container">
+            <article class="project-card">
+                <div class="project-text">
+                    <h3>Pass me the aux</h3>
+                    <a href="https://jpecheverryp.github.io/pass-me-the-aux/index.html" class="live-link" target="_blank">Go to Live</a>
+                    <a href="https://github.com/jpecheverryp/pass-me-the-aux" class="repo-link" target="_blank">Go to Repository</a>
+                </div>
+                <img class="project-img" src="./assets/images/pass-me-the-aux.png" alt="Pass me the AUX project">
+                <p>Group project, it uses two APIs (Songsterr and lyrics.ovh) to find the lyrics of a song having both the artist name and the song name.</p>
+                <p>We learnt about collaboration via Github and agile development</p>
+            </article>
+
+            <article class="project-card">
+                <div class="project-text">
+                    <h3>Weather Dashboard</h3>
+                    <a href="https://jpecheverryp.github.io/weather-dashboard/" class="live-link" target="_blank">Go to Live</a>
+                    <a href="https://github.com/jpecheverryp/weather-dashboard" class="repo-link" target="_blank">Go to Repository</a>
+                </div>
+                <img class="project-img" src="./assets/images/weatherDashboard.png" alt="Weather Dashboard project">
+                <p>Weather Dashboard, made with HTML, CSS and JS.</p>
+                <p>It uses the jQuery API and </p>
+            </article>
+
+            <article class="project-card">
+                <div class="project-text">
+                    <h3>Pass me the aux</h3>
+                    <a href="https://jpecheverryp.github.io/code-quiz/" class="live-link" target="_blank">Go to Live</a>
+                    <a href="https://github.com/jpecheverryp/code-quiz" class="repo-link" target="_blank">Go to Repository</a>
+                </div>
+                <img class="project-img" src="./assets/images/code-quiz.png" alt="Code quiz project">
+                <p>Details: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ea distinctio possimus ducimus debitis quos blanditiis alias temporibus enim doloremque?</p>
+            </article>
+        </div>
     </section>
 
     <section id="contact">
