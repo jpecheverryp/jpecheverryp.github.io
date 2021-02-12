@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan P Echeverry</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/18a9386424.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
     <section class="about-section" id="about">
         <h1 class="about-name">I'm Juan P Echeverry</h1>
         <div class="about-img-container">
-            <img class="about-img" src="./assets/images/dom-rep-beach.png" alt="me at the beach">
+            <img class="about-img" src="./assets/images/bio-pic.png" alt="a picture of me">
         </div>
         <article class="about-description">
             <p>
@@ -38,8 +39,8 @@
                 I am currently living on Atlanta, GA and I love it here!
             </p>
             <p>
-                I am currently enrolled in
-                the GA Tech Full Stack Web Development Bootcamp, that's because I love tech and I would love to be
+                I am enrolled in
+                the GA Tech Full Stack Web Development Bootcamp. I love tech and I would love to be
                 involved
                 on creating something new and awesome!
             </p>
@@ -54,52 +55,51 @@
         <h2>My Projects</h2>
         <div class="projects-container">
             <article class="project-card">
-                <div class="project-text">
-                    <h3>Pass me the aux</h3>
-                    <a href="https://jpecheverryp.github.io/pass-me-the-aux/index.html" class="live-link" target="_blank">Go to Live</a>
-                    <a href="https://github.com/jpecheverryp/pass-me-the-aux" class="repo-link" target="_blank">Go to Repository</a>
-                </div>
+                <h3>Pass me the aux</h3>
                 <img class="project-img" src="./assets/images/pass-me-the-aux.png" alt="Pass me the AUX project">
-                <p>Group project, it uses two APIs (Songsterr and lyrics.ovh) to find the lyrics of a song having both the artist name and the song name.</p>
-                <p>We learnt about collaboration via Github and agile development</p>
+                <a href="https://jpecheverryp.github.io/pass-me-the-aux/index.html" class="project-link"
+                    target="_blank">Go to Live</a>
+                <a href="https://github.com/jpecheverryp/pass-me-the-aux" class="project-link" target="_blank">Go to
+                    Repository</a>
+                <p>Group project, it uses two APIs (Songsterr and lyrics.ovh) to find the lyrics of a song having both
+                    the artist name and the song name.</p>
+                <p>I learnt about collaboration via Github and agile development using branches and pull requests</p>
             </article>
 
             <article class="project-card">
-                <div class="project-text">
-                    <h3>Weather Dashboard</h3>
-                    <a href="https://jpecheverryp.github.io/weather-dashboard/" class="live-link" target="_blank">Go to Live</a>
-                    <a href="https://github.com/jpecheverryp/weather-dashboard" class="repo-link" target="_blank">Go to Repository</a>
-                </div>
+                <h3>Weather Dashboard</h3>
                 <img class="project-img" src="./assets/images/weatherDashboard.png" alt="Weather Dashboard project">
+                <a href="https://jpecheverryp.github.io/weather-dashboard/" class="project-link" target="_blank">Go
+                    to
+                    Live</a>
+                <a href="https://github.com/jpecheverryp/weather-dashboard" class="project-link" target="_blank">Go
+                    to
+                    Repository</a>
                 <p>Weather Dashboard, made with HTML, CSS and JS.</p>
-                <p>It uses the jQuery API and </p>
+                <p>It uses the jQuery and the OpenWeatherMap API</p>
             </article>
 
             <article class="project-card">
-                <div class="project-text">
                     <h3>Pass me the aux</h3>
-                    <a href="https://jpecheverryp.github.io/code-quiz/" class="live-link" target="_blank">Go to Live</a>
-                    <a href="https://github.com/jpecheverryp/code-quiz" class="repo-link" target="_blank">Go to Repository</a>
-                </div>
-                <img class="project-img" src="./assets/images/code-quiz.png" alt="Code quiz project">
-                <p>Details: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ea distinctio possimus ducimus debitis quos blanditiis alias temporibus enim doloremque?</p>
+                    <img class="project-img" src="./assets/images/code-quiz.png" alt="Code quiz project">
+                    <a href="https://jpecheverryp.github.io/code-quiz/" class="project-link" target="_blank">Go to
+                        Live</a>
+                    <a href="https://github.com/jpecheverryp/code-quiz" class="project-link" target="_blank">Go to
+                        Repository</a>
+                <p>Code quiz app, it uses a timer and you can choose different answers to see how much you can score.</p>
+                <p>I learnt about local storage, DOM manipulation and timers on Javascript</p>
             </article>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact me</h2>
-        <!-- I should change this form for something better -->
+    <section id="contact" class="contact">
+        <h2 class="contact-title">Let's Work together!</h2>
         <!-- Also add links to github linkedin and cv -->
-        <form>
-            <label for="email">Email address</label>
-            <input id="email" type="email" placeholder="johndoe@example.com">
-
-            <label for="message">Message</label>
-            <textarea id="message" rows="3" placeholder="Message"></textarea>
-
-            <input type="submit" value="Send">
-        </form>
+        <p class="email-text">You can email me @: <span class="email">jpecheverryp@gmail.com</span></p>
+        <div class="contact-links">
+            <a target="_blank" href="https://github.com/jpecheverryp" class="contact-link" ><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/juan-echeverry-0735631ba/" class="contact-link"><i class="fab fa-linkedin-in"></i></a>
+        </div>
     </section>
 </body>
 

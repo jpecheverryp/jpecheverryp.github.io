@@ -9,10 +9,8 @@
 }
 
 :root {
-    --purple: rgba(126, 35, 211, 0.95);
+    --main: rgba(59, 99, 152, 0.95);
     --white: rgb(248,248,255);
-    --light-purple: #A348F7;
-    --orange: rgba(255, 62, 14, 0.85);
 }
 
 img {
@@ -25,18 +23,30 @@ body {
     background: var(--white);
 }
 
-p {
+p, a {
+    font-size: 1.5rem;
     line-height: 1.5rem;
 }
 
-h2 {
-    color: var(--purple);
+h1 {
+    font-size: 2.5rem;
 }
+
+h2 {
+    color: var(--main);
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+
 
 /* Navigation Styles */
 
 header {
-    background-color: var(--purple);
+    background-color: var(--main);
     text-align: center;
     position: fixed;
     z-index: 999;
@@ -47,7 +57,7 @@ header {
 
 .about-name {
     padding: 1rem;
-    color: var(--purple);
+    color: var(--main);
 }
 
 .about-name::after {
@@ -56,7 +66,7 @@ header {
     margin-top: 0.5rem;
     width: max-content;
     padding: 0.1rem 1rem;
-    background: var(--purple);
+    background: var(--main);
     color: var(--white);
     
 }
@@ -111,7 +121,7 @@ nav {
     text-align: right;
     top: 100%;
     right: 0;
-    background-color: var(--purple);
+    background-color: var(--main);
     width: 100%;
     height: 50vh;
     transform: scale(1, 0);
@@ -173,12 +183,12 @@ section {
 .about-description {
     margin-top: 3rem;
     padding: 1rem;
-    background-color: var(--purple);
+    background-color: var(--main);
     color: var(--white);
 }
 
 .project-card {
-    background-color: var(--light-purple);
+    background-color: var(--main);
     color: white;
     padding: 1rem;
     display: block;
@@ -200,11 +210,49 @@ section {
 }
 .project-img {
     position: relative;
-    margin: 1rem 0;
+    margin: 1rem auto;
 }
 
 .project-text a {
     display: block;
+}
+
+.project-link {
+    display: block;
+    width: fit-content;
+    padding: 0.2rem 0.5rem;
+    margin: 1rem auto;
+    background: var(--white);
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+.contact {
+    padding: 1rem;
+    margin-bottom: 10rem;
+}
+
+.contact-title {
+    text-align: center;
+}
+
+.email-text {
+    margin: 1rem;
+}
+
+.contact-links {
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+    min-width: 320px;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.contact-link {
+    font-size: 2rem;
+    color: var(--white);
+    margin: 1rem;
 }
 
 @media screen and (min-width: 768px) {
