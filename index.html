@@ -4,135 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap library -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <title>About me</title>
+    <title>Juan P Echeverry</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/18a9386424.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Navbar Starts Here -->
-    <!-- Main container, creates navbar, expands it and gives it bg-color-->
-    <nav class="navbar navbar-dark navbar-expand-lg">
-        <!-- makes it responsive -->
-        <div class="container-fluid">
-            <!-- Main title of the Navbar, Margin-bottom 0, and color -->
-            <span class="navbar-brand mb-0 h1">Juan P Echeverry</span>
-            <!-- Hamburger button for smaller screens -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Different buttons in the Navbar -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <!-- Navbar Here -->
+    <header>
+        <span class="logo">Juan P Echeverry</span>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
 
+    <section class="about-section" id="about">
+        <h1 class="about-name">I'm Juan P Echeverry</h1>
+        <div class="about-img-container">
+            <img class="about-img" src="./assets/images/bio-pic.png" alt="a picture of me">
         </div>
-    </nav>
+        <article class="about-description">
+            <p>
+                Welcome to my site, I am Juan P Echeverry
+            </p>
+            <p>
+                I am currently living on Atlanta, GA and I love it here!
+            </p>
+            <p>
+                I am enrolled in
+                the GA Tech Full Stack Web Development Bootcamp. I love tech and I would love to be
+                involved
+                on creating something new and awesome!
+            </p>
+            <p>
+                My interests include Tech, Finance, Science, Math and Origami
+            </p>
+        </article>
+    </section>
 
-    <article class="container" id="about">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="p-2">Hey I'm a Web Developer!</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <img class="about-me-img" src="http://www.placehold.it/150" alt="placeholder">
-                <p class="fs-4">
-                    Welcome to my site, I'm Juan P Echeverry. I'm learning web development.
-                </p>
-                <p class="fs-4">
-                    I've been living on Atlanta, GA for the last 3 years and I love it here. I am currently enrolled in
-                    the GA Tech coding bootcamp and I have learn these technologies so far:
-                </p>
-                <ul class="fs-3">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Bootstrap</li>
-                    <li>Javascript</li>
-                    <li>Git & GitHub</li>
-                </ul>
-                <p class="fs-4">
-                    I want to start my coding career, because I want to create something new and useful for everyone. I
-                    find it fun to be able to solve problems that we have and automating boring stuff that we could
-                    avoid doing, so we can focus on more creative tasks
-                </p>
+    <section id="projects">
 
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <article class="project-card">
+                <h3>Pass me the aux</h3>
+                <img class="project-img" src="./assets/images/pass-me-the-aux.png" alt="Pass me the AUX project">
+                <a href="https://jpecheverryp.github.io/pass-me-the-aux/index.html" class="project-link"
+                    target="_blank">Go to Live</a>
+                <a href="https://github.com/jpecheverryp/pass-me-the-aux" class="project-link" target="_blank">Go to
+                    Repository</a>
+                <p>Group project, it uses two APIs (Songsterr and lyrics.ovh) to find the lyrics of a song having both
+                    the artist name and the song name.</p>
+                <p>I learnt about collaboration via Github and agile development using branches and pull requests</p>
+            </article>
 
-            </div>
-        </div>
-    </article>
+            <article class="project-card">
+                <h3>Weather Dashboard</h3>
+                <img class="project-img" src="./assets/images/weatherDashboard.png" alt="Weather Dashboard project">
+                <a href="https://jpecheverryp.github.io/weather-dashboard/" class="project-link" target="_blank">Go
+                    to
+                    Live</a>
+                <a href="https://github.com/jpecheverryp/weather-dashboard" class="project-link" target="_blank">Go
+                    to
+                    Repository</a>
+                <p>Weather Dashboard, made with HTML, CSS and JS.</p>
+                <p>It uses the jQuery and the OpenWeatherMap API</p>
+            </article>
 
-    <article class="container" id="projects">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="p-2">My Projects</h1>
-            </div>
+            <article class="project-card">
+                    <h3>Pass me the aux</h3>
+                    <img class="project-img" src="./assets/images/code-quiz.png" alt="Code quiz project">
+                    <a href="https://jpecheverryp.github.io/code-quiz/" class="project-link" target="_blank">Go to
+                        Live</a>
+                    <a href="https://github.com/jpecheverryp/code-quiz" class="project-link" target="_blank">Go to
+                        Repository</a>
+                <p>Code quiz app, it uses a timer and you can choose different answers to see how much you can score.</p>
+                <p>I learnt about local storage, DOM manipulation and timers on Javascript</p>
+            </article>
         </div>
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <img class="p-4 portfolio-img" src="https://www.placehold.it/350" alt="placeholder">
-            </div>
-            <div class="col-md-4">
-                <img class="p-4 portfolio-img" src="https://www.placehold.it/350" alt="placeholder">
-            </div>
-            <div class="col-md-4">
-                <img class="p-4 portfolio-img" src="https://www.placehold.it/350" alt="placeholder">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <img class="p-4 portfolio-img" src="https://www.placehold.it/350" alt="placeholder">
-            </div>
-            <div class="col-md-4">
-                <img class="p-4 portfolio-img" src="https://www.placehold.it/350" alt="placeholder">
-            </div>
-            <div class="col-md-4">
-                <img class="p-4 portfolio-img" src="https://www.placehold.it/350" alt="placeholder">
-            </div>
-        </div>
-    </article>
+    </section>
 
-    <article class="container p-2" id="contact">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="p-2">Contact me</h1>
-            </div>
+    <section id="contact" class="contact">
+        <h2 class="contact-title">Let's Work together!</h2>
+        <!-- Also add links to github linkedin and cv -->
+        <p class="email-text">You can email me @: <span class="email">jpecheverryp@gmail.com</span></p>
+        <div class="contact-links">
+            <a target="_blank" href="https://github.com/jpecheverryp" class="contact-link" ><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/juan-echeverry-0735631ba/" class="contact-link"><i class="fab fa-linkedin-in"></i></a>
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput2" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
-        </div>
-        <button>
-            Submit
-        </button>
-    </article>
-    <!-- Bootstrap library -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
+    </section>
 </body>
 
 </html>
